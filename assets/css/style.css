@@ -1,0 +1,126 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*  resetando configurações padrao dos browser */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+
+/* centralizando os itens no centro do body*/
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 170px;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Espaçamento interno das divs */
+
+.join, .monthly, .why {
+    padding: 40px;
+}
+
+/* flex in section*/
+
+section {
+    display: flex;
+}
+
+.why, .monthly {
+    flex: 1;
+    color: #feffff;
+}
+
+.join {
+    background-color: #ffffff;
+}
+
+.join h1 {
+    padding-bottom: 34px;
+    color: #2bb3b3;
+}
+
+.join p {
+    color: #a4abb5;
+}
+
+#yellow {
+    padding-bottom: 22px;
+    color: hsl(71, 73%, 54%);
+}
+
+.why {
+    background-color: #4abebd;
+}
+
+.monthly {
+    background-color: #2bb3b3;
+}
+
+.monthly h2, .why h2 {
+    padding-bottom: 24px;
+}
+
+.why p {
+    line-height: 28px;
+}
+
+.preco span {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.monthly p {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.monthly input {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 18px 84px;
+    border-radius: 12px;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: #feffff;
+    font-weight: 700;
+    box-shadow: 1px 8px 20px #21212c;
+}
+
+@media only screen and (max-width:748px) {
+    section {
+        flex-direction: column;
+    }
+    .join, .monthly, .why {
+        padding: 20px;
+    }
+    .container{
+        max-width: 90%;
+    }
+    body{
+        padding-top: 20px;
+    }
+}
